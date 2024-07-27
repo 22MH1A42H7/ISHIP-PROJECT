@@ -62,7 +62,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/22MH1A42H7/ISHIP-PROJECT/blob/main/JPG'S/9.jpg" width="800" height="500">
+  <img src="https://github.com/22MH1A42H7/ISHIP-PROJECT/blob/main/JPG'S/9.jpg" width="700" height="400">
 </p>
 
 
