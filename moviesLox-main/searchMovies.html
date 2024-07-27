@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIESLOX</title>
+    <!-- css include -->
+        <!-- normalize  -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- end normalize  -->
+        <!-- fonts  -->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!-- end fonts  -->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <!-- box icons  -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <!-- end box icons  -->
+        <!-- owl carousel  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" />
+        <!-- end owl carousel  -->
+        <!-- main  -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- end main  -->
+    <!-- end css include  -->
+  
+</head>
+<body>
+    <!-- nav  -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <!-- logo  -->
+                <a href="#" class="logo">
+                    <i class='bx bx-movie-play flip-rtl  bx-tada main-color'></i>
+                    <span>movies</span><span class="main-color">lox</span>
+                </a>
+                <!-- end logo  -->
+
+                <!-- menu  -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a class="c-n-item" href="#Home">Home</a></li>
+                    <li>
+                        <a class="c-n-item" href="#Genre">movies</a>
+                        <div class="c-n-i-dropDown">
+                            <a href="#" class="list-group-item">action</a>
+                            <a href="#" class="list-group-item">action</a>
+                            <a href="#" class="list-group-item">action</a>
+                            <a href="#" class="list-group-item">action</a>
+                            <a href="#" class="list-group-item">action</a>
+
+                        </div>
+                    </li>
+                    <li><a class="c-n-item" href="#Series">Series</a></li>
+                    <li>
+                        <a class="c-n-item" href="#About">About</a>
+
+                    </li>
+                    <li><a class="c-n-item"  href="rtl/index.html">arabic</a></li>
+                    <li>
+                        <a href="#Singin" class="btn btn-hover c-n-item">
+                            <i class='bx bx-log-in flip-rtl' ></i>
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end menu  -->
+                
+                <!-- mobile menu toggle  -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+                <!-- end mobile menu toggle  -->
+            </div>
+        </div>
+    </div>
+    <!-- end nav  -->
+    <!-- search bar section  -->
+    <div class="section">
+        <div class="container">
+            <div class="search-bar">
+                <form action="#" id="search-form"></form>
+                <div class="col-sm-12 col-md-4">
+                    <div class="search-field">
+                        <i class='bx bx-search-alt'></i>
+                        <input type="text" name="text" placeholder="search for" form="search-form">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="type-field">
+                                <select name="type" form="search-form"  >
+                                    <option value="A">Action</option>
+                                    <option value="A">sci-fi</option>
+                                    <option value="A">drama</option>
+                                    <option value="A">comedy</option>
+                                    <option value="A">crame</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="year-field">
+                                <select name="year"  form="search-form" >
+                                    <option value="A">1234</option>
+                                    <option value="A">3232</option>
+                                    <option value="A">1999</option>
+                                    <option value="A">2012</option>
+                                    <option value="A">2143</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="submit-field btn btn-hover">
+                                <i class='bx bx-search-alt'></i>
+                                <input type="submit"   form="search-form" value="search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end search bar section -->
+    <!-- search result section  -->
+    <div class="section">
+        <div class="container">
+            <div class="row movies-search-result">
+
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/supergirl.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    supergirl
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/movies/captain-marvel.png" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    captin marvel
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/cartoons/demon-slayer.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    demon slayer
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>blueray</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/movies/blood-shot.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    blood shot
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>8.5</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>90 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>sd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>12+</span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/wanda.png" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    wanda vision
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/movies/bat-man.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    the dark knight
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/start-trek.jpeg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    start trek
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/mandalorian.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    the mandalorian
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/penthouses.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    penthouses
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/stranger-thing.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    stranger thing
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/series/star-trek.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    start trek descovery
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/movies/insidious.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    insidious
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/movies/resident-evil.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    resident evil
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+                <!-- movie item  -->
+                <div class="col-6 col-xl-2 col-md-3 col-sm-6">
+                    <div class="movie-item">
+                        <a href="movie.html">
+                            <img src="images/cartoons/coco.jpg" alt="">
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">
+                                    coco
+                                </div>
+                                <div class="item-content-infos ">
+                                    <div class="item-content-info  rating">
+                                        <i class="bx bx-star flip-rtl"></i>
+                                        <span>9.6</span>
+                                    </div>
+                                    <div class="item-content-info time">
+                                        <i class="bx bx-time flip-rtl"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="item-content-info resolution">
+                                        <i class='bx bx-tv flip-rtl'></i>
+                                        <span>hd</span>
+                                    </div>
+                                    <div class="item-content-info age-restriction">
+                                        <i class='bx bx-user-circle flip-rtl'></i>
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end movie item  -->
+            </div>
+        </div>
+    </div>
+    <!-- end search result section -->
+
+    <!-- footer section  -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <!-- logo  -->
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play flip-rtl  bx-tada main-color'></i>
+                            <span>movies</span><span class="main-color">lox</span>
+                        </a>
+                        <!-- end logo  -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Alias voluptate saepe, magnam quod dolorum cupiditate, 
+                            qui odio rem nam exercitationem iusto labore? Recusandae, 
+                            culpa! Error consectetur sequi est quisquam officiis?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook "></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter "></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram "></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-youtube "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="wedget-title">movieslox</div>
+                                <ul class="wedget-menu">
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="wedget-title">links</div>
+                                <ul class="wedget-menu">
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="wedget-title">help</div>
+                                <ul class="wedget-menu">
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">about us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="wedget-title">download app</div>
+                                <ul class="wedget-menu">
+                                    <li><a href="#"><img src="images/app-store.png" alt=""></a></li>
+                                    <li><a href="#"><img src="images/google-play.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer section  -->
+    <!-- copyright section  -->
+    <div class="copyright">
+        copyright 2021 <a href="https://github.com/1akram" target="_blank" >akram</a>
+    </div>
+    <!-- end copyright section  -->
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+    <!-- js include  -->
+        <!-- jquery  -->
+        <script src="js/jQuery/jquery-3.6.0.min.js"></script>
+        <!-- end jquery  -->
+        <!-- owl carousel  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+         crossorigin="anonymous"></script>
+        <!-- end owl carousel  -->
+        <!-- main  -->
+        <script src="js/main.js"></script>
+        <!-- end main  -->
+     
+    <!-- end js include  -->
+</body>
+</html>
